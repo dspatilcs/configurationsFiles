@@ -9,3 +9,23 @@ Step 2: Merge the changes and update on GitHub.
 git checkout yyy-api
 git merge --no-ff xxx-api
 git push origin yyy-api
+================================================
+===========Merge Branch 1 to Branch 2===========
+git status : will show conflict current branch 1
+git add .
+git commit -m "merge changes"
+git push origin <branch1-name>
+git checkout <branch2-name>
+git pull --rebase origin <branch2-name>
+git checkout <branch1-name>
+git rebase <branch2-name>    : will show conflict , resolve it in Eclipse/ or by cmd tool
+git status
+git add . 
+git rebase --continue    : if conflict then resove in eclipse
+git push -f origin Branch1
+Eclipse > Brach2 > Team > Merge
+
+
+
+
+
