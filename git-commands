@@ -24,7 +24,7 @@ git add .
 git rebase --continue    : if conflict then resove in eclipse
 git push -f origin Branch1
 Eclipse > Brach2 > Team > Merge
-
+git merge <other-branch/Branch 1>  : this merge other Branch 1 into current Branch 2 (on current branch)
 
 
 
