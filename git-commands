@@ -1,1 +1,11 @@
+Step 1: From your project repository, bring in the changes and test.
 
+git fetch origin
+git checkout -b xxx-api origin/xxx-api
+git merge yyy-api
+
+Step 2: Merge the changes and update on GitHub.
+
+git checkout yyy-api
+git merge --no-ff xxx-api
+git push origin yyy-api
