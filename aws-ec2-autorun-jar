@@ -14,11 +14,11 @@ java -Xmx700m -jar ec2-masterclass-sample-app.jar
 # System D type of Configuration for Linux 2
 sudo bash -c 'cat << \EOF > /etc/systemd/system/vishalvitaapplication.service
 [Unit]
-Description=EC2 Vishal Vita App
+Description=EC2 VV App
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/java -jar /home/ec2-user/vishalvita-10.10.2020.jar
+ExecStart=/usr/bin/java -jar /home/ec2-user/VV-10.10.2020.jar
 Restart=on-failure
 
 [Install]
@@ -26,5 +26,5 @@ WantedBy=multi-user.target
 EOF'
 
 # apply across reboots
-sudo systemctl enable vishalvitaapplication.service # enable on boot
-sudo systemctl start vishalvitaapplication.service  # start now
+sudo systemctl enable vvapplication.service # enable on boot
+sudo systemctl start vvapplication.service  # start now
